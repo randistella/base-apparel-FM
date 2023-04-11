@@ -97,20 +97,29 @@ body {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
 
         .box-left {
+            .desktop-logo {
+                position: absolute;
+                left:50px;
+            }
 
             h1, p {
                 // font-size: 0px;
                 text-align: center;
             }
+
+            h1 {
+                font-size: 60px;
+            }
             .custom-search {
-                width: 80%;
+                width: 100%;
             }
 
             button {
                 position: absolute;
-                left: 290px;
+                left: 270px;
                 padding: 15px 28px;
             }
         }
@@ -120,7 +129,7 @@ body {
             .mobile-img {
                 background: url('/images/hero-mobile.jpg') no-repeat center center / cover;
                 width: 100vw;
-                height: 50vh;
+                height: 40vh;
                 position: relative;
                 top: 150px;
             }
