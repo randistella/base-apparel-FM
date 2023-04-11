@@ -47,9 +47,6 @@ body {
         }
 
         input {
-            // border-radius: 50px;
-            // padding: 10px;
-            // width: 100%;
             font-family: inherit;
             border-color: hsl(0, 93%, 68%);
             font-size: 15px;
@@ -57,24 +54,21 @@ body {
             border-width: .5px;
             width: 100%;
             border-radius: 50px;
-            padding: 20px 100px 20px 30px; 
+            padding: 15px 100px 15px 30px; 
             line-height: 1;
-            // box-sizing: border-box;
+            box-sizing: border-box;
             outline: none;
         }
 
+        input::placeholder {
+            color:hsl(0, 36%, 70%);
+            opacity: 0.3;
+        }
+
         button {
-            // position: absolute;
-            // background-color: hsl(0, 36%, 70%);
-            // border-radius: 30px;
-            // padding: 10px 30px 10px;
-            // border: none;
-            // position: relative;     
-            // top: 1px; 
             position: absolute;
-            left: 350px; 
+            left: 370px; 
             top: 30px;
-            // bottom: 10px;
             border: 0;
             background: rgb(238,174,202);
             background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%) 100%);
@@ -83,7 +77,8 @@ body {
             margin: 0;
             padding: 15px 40px;
             border-radius: 100px;
-            z-index: 2;  
+            z-index: 2;
+            box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.07);
         }
     }
 
@@ -100,11 +95,27 @@ body {
 @media only screen and (max-width: 700px) {
     .container {
         flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+        .box-left {
+
+            h1, p {
+                // font-size: 0px;
+                text-align: center;
+            }
+            .custom-search {
+                width: 80%;
+            }
+
+            button {
+                position: absolute;
+                left: 290px;
+                padding: 15px 28px;
+            }
+        }
 
         .box-right {
-            // width: 700px;
-            // height: 200px;
-            // color:blue;
 
             .mobile-img {
                 background: url('/images/hero-mobile.jpg') no-repeat center center / cover;
