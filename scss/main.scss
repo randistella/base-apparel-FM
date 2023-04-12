@@ -14,7 +14,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('/images/bg-pattern-desktop.svg') no-repeat center center / cover;
+    background: url('./images/bg-pattern-desktop.svg') no-repeat center center / cover;
+    overflow: hidden;
 
     .box-left {
         padding: 190px;
@@ -68,7 +69,7 @@ body {
         button {
             position: absolute;
             left: 370px; 
-            top: 30px;
+            top: 28px;
             border: 0;
             background: rgb(238,174,202);
             background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%) 100%);
@@ -84,7 +85,7 @@ body {
 
     .box-right {
         .desktop-img {
-            background: url('/images/hero-desktop.jpg') no-repeat center center /cover;
+            background: url('../images/hero-desktop.jpg') no-repeat center center / cover;
             width:50vw;
             height: 100vh;
         }
@@ -92,7 +93,7 @@ body {
 }
 
 // responsive
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 375px) {
     .container {
         flex-direction: column-reverse;
         align-items: center;
@@ -127,7 +128,7 @@ body {
         .box-right {
 
             .mobile-img {
-                background: url('/images/hero-mobile.jpg') no-repeat center center / cover;
+                background: url('../images/hero-mobile.jpg') no-repeat center center / cover;
                 width: 100vw;
                 height: 40vh;
                 position: relative;
