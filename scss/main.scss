@@ -14,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('./images/bg-pattern-desktop.svg') no-repeat center center / cover;
+    background: url('../images/bg-pattern-desktop.svg') no-repeat center center / cover;
     overflow: hidden;
 
     .box-left {
@@ -80,6 +80,11 @@ body {
             border-radius: 100px;
             z-index: 2;
             box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.07);
+        }
+
+        button:hover {
+            background: hsl(0, 80%, 86%);
+            cursor: pointer;
         }
     }
 
