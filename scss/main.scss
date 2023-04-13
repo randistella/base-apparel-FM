@@ -86,6 +86,20 @@ body {
             background: hsl(0, 80%, 86%);
             cursor: pointer;
         }
+
+        #error {
+            font-size: 15px;
+            color: hsl(0, 93%, 68%);
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+        #success {
+            font-size: 15px;
+            color: green;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
     }
 
     .box-right {
